@@ -7,6 +7,7 @@
                                            'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <link href='https://fonts.googleapis.com/css?family=Cabin|Old+Standard+TT' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <%= csrf_meta_tags %>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -23,14 +24,14 @@
         </div>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Features",   features_path %></li>
-            <li><%= link_to "Pricing",   pricing_path %></li>
-            <li><%= link_to "Contact", contact_path %></li>
+            <li><%= link_to "Features",   features_path, :class => ('active' if current_page?(features_path)) %></li>
+            <li><%= link_to "Pricing",   pricing_path, :class => ('active' if current_page?(pricing_path)) %></li>
+            <li><%= link_to "Contact", contact_path, :class => ('active' if current_page?(contact_path)) %></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="container">
+    <div class="container" id='overall'>
       <%= yield %>
     </div>
   </body>

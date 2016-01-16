@@ -28,9 +28,9 @@ body {
   overflow: hidden;
 }
 
-.jumbotron {
-  padding-top: 200px;
-}
+// .jumbotron {
+//   padding-top: 200px;
+// }
 
 .container .jumbotron {
   background-color: #06d8ff;
@@ -66,5 +66,17 @@ h2 {
   position: absolute;
   float: right;
   margin-left: -100px;
-  padding-top: 100px;
+  margin-top: -100px;
+}
+
+// push down content
+
+#overall {
+  margin-top: 200px;
+}
+
+//typography
+
+h1 {
+  color: #fff;
 }
