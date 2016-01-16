@@ -5,8 +5,8 @@
 
 .navbar-inverse {
   margin-top: 40px;
-  background-color: #06d8ff;
-  border-color: #06d8ff;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -33,7 +33,7 @@ body {
 // }
 
 .container .jumbotron {
-  background-color: #06d8ff;
+  background-color: transparent;
 }
 
 .jumbotron h1 {
@@ -80,3 +80,31 @@ h2 {
 h1 {
   color: #fff;
 }
+
+// make responsive
+
+ /* Small Devices, Tablets */
+    @media only screen and (max-width : 991px) {
+      // body {
+      //   background-image: image-url('Overlay.png');
+      // }
+      #overlay {
+        margin-top: -600px;
+        z-index: -1;
+      }
+      .container .jumbotron {
+        background-color: rgba(6, 216, 255, .8);
+      }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 768px) {
+      nav {
+        display: none;
+      }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
