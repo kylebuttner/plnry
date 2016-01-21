@@ -1,17 +1,14 @@
 <% provide(:title, "") %>
-<div class="col-md-6">
-<div class="center jumbotron">
-  <h1>Plnry</h1>
 
-  <h2>
-    Monitor legislative and regulatory activity across Europe in ONE place.
+
+<div class="center jumbotron">
+  <%= image_tag("logo.png", :alt => "logo") %>
+  <h2 class="homepage">
+    Monitor and analyse legislative activity across Europe.
   </h2>
   
-  <%= link_to "Join the waiting list now!", '#', class: "btn btn-lg btn-primary" %>
+  <%= link_to "Get access now!", signup_path, class: "btn btn-lg btn-primary" %>
+  
+  <p id="homepage">Questions? <%= mail_to "kylebuttner@gmail.com", "Leave us a note!" %></p>
 </div>
-</div>
-<div class='col-md-6'>
-<div id="overlay">
-  <%= image_tag("Overlay.png", alt: "Overlay")%>
-</div>
-</div>
+

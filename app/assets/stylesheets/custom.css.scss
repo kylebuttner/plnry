@@ -5,26 +5,29 @@
 
 .navbar-inverse {
   margin-top: 40px;
-  background-color: transparent;
+  background-color: #FFD0A4;
   border-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  font-family: "Old Standard TT";
+  font-family: "Quicksand";
   color: #fff;
   font-size: 24px;
   &:hover{
-    color: #FFD0A4;
+    color: #FF7C00;
   }
 }
 
 #logo img {
-  width: 50px;
+  width: 175px;
   height: auto;
 }
 
 body {
   background-color: #06d8ff;
+}
+
+.home {
   overflow: hidden;
 }
 
@@ -32,27 +35,37 @@ body {
 //   padding-top: 200px;
 // }
 
-.container .jumbotron {
+.jumbotron {
   background-color: transparent;
 }
 
+.center.jumbotron {
+  text-align: center;
+}
+
 .jumbotron h1 {
-  font-family: "Cabin";
+  font-family: "Quicksand";
   font-weight: bold;
-  font-size: 90px;
+  font-size: 100px;
   color: #000;
+}
+
+h2 .homepage{
+  margin-top: 30px;
+  font-family: "Quicksand";
+  color: #fff
 }
 
 h2 {
   margin-top: 30px;
-  font-family: "Old Standard TT";
-  color: #fff
+  font-family: "Quicksand";
+  color: #000
 }
 
 .btn-primary {
   background-color: #ff7c00;
   border-color: #ff7c00;
-  font-family: "Old Standard TT";
+  font-family: "Quicksand";
   width: 78%;
   margin-top: 20px;
   &:hover {
@@ -67,6 +80,7 @@ h2 {
   float: right;
   margin-left: -100px;
   margin-top: -100px;
+  z-index: -1;
 }
 
 // push down content
@@ -79,6 +93,26 @@ h2 {
 
 h1 {
   color: #fff;
+}
+
+p #homepage{
+  font-family: "EB Garamond";
+  font-size: 10px;
+  margin: 20px;
+}
+
+p {
+  font-family: "EB Garamond";
+  font-size: 15px;
+  margin: 20px;
+}
+
+
+a {
+  color: #D96A00;
+  &:hover {
+    color: white;
+  }
 }
 
 // make responsive
@@ -108,3 +142,10 @@ h1 {
     @media only screen and (max-width : 320px) {
         
     }
+    
+//features page
+
+.page {
+  background-color: white;
+  padding-top: 50px;
+}

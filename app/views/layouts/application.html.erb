@@ -6,33 +6,43 @@
     <%= stylesheet_link_tag 'application', media: 'all',
                                            'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <link href='https://fonts.googleapis.com/css?family=Cabin|Old+Standard+TT' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand|EB+Garamond' rel='stylesheet' type='text/css'>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <%= csrf_meta_tags %>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
     <![endif]-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72691479-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </head>
 </head>
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-left" id="logo">
-        <%= link_to image_tag("Plnry_logo.png", alt: "Plnry logo"),
+        <%= link_to image_tag("logo.png", alt: "logo"),
             root_path %>
         </div>
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Features",   features_path, :class => ('active' if current_page?(features_path)) %></li>
-            <li><%= link_to "Pricing",   pricing_path, :class => ('active' if current_page?(pricing_path)) %></li>
-            <li><%= link_to "Contact", contact_path, :class => ('active' if current_page?(contact_path)) %></li>
+            <li><%= link_to "Log In", login_path, :class => ('active' if current_page?(login_path)) %></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="container" id='overall'>
+    <div id='overall'>
       <%= yield %>
     </div>
+
   </body>
 </html>
