@@ -86,13 +86,19 @@ h2 {
 // push down content
 
 #overall {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 //typography
 
 h1 {
   color: #fff;
+}
+
+h3 {
+  color: #000;
+  font-family: "EB Garamond";
+  font-size: 20px;
 }
 
 p #homepage{
@@ -111,9 +117,10 @@ p {
 a {
   color: #D96A00;
   &:hover {
-    color: white;
+    color: #FF7C00;
   }
 }
+
 
 // make responsive
 
@@ -147,5 +154,19 @@ a {
 
 .page {
   background-color: white;
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.feature_img {
+  padding-top: 40px;
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+.page ul {
+  font-family: "EB Garamond";
+  font-size: 15px;
+  margin: 20px;
 }

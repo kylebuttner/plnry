@@ -1,5 +1,45 @@
 <% provide(:title, "Features") %>
 
-<div class="container page">
-<script type="text/javascript">app_id="56a00b89905b109f38b303e8";distribution_key="dist_2";</script><script type="text/javascript" src="https://api.knackhq.com/56a00b89905b109f38b303e8/dist_2/knack.js"></script><div id="knack-dist_2">Loading...</div>
+<div class="page">
+<div class="container">
+    <div class="col-md-12">
+        <h3><strong>Tabled</strong> makes it easy to track and analyse legislative initiatives across Europe.</h3>
+    </div>
+    
+    <div class="col-md-4">
+        <%= image_tag("monitor.png", :alt => "monitor", class: "feature_img") %>
+        <h2>Monitor</h2>
+        <p>Keep up with legislative and regulatory proposals from 33 European countries, the EU, and hundreds
+        of national regulators through a simple yet comprehensive newsfeed.</p>
+        <p>Receive brief and timely email updates on the issues that matter most to you.</p>
+        <p>Subscribe to legislative documents to receive updates throughout their lifecycle.</p>
+        <p>Readily access official sources and documents.</p>
+    </div>
+    
+    <div class="col-md-4">
+        <%= image_tag("analyse.png", :alt => "analyse", class: "feature_img") %>
+        <h2>Analyse</h2>
+        <p>Perform powerful keyword searches across 33 languages.</p>
+        <p>Filter our expansive database of legislative proposals by issue area, jurisdiction, agency, and key dates.</p>
+        <p>View political risk maps based on key pieces of legislation you are following.</p>
+        <p>Create and export comprehensive, customisable reports to share.</p>
+    </div>
+    
+    <div class="col-md-4">
+        <%= image_tag("pencil.png", :alt => "collaborate", class: "feature_img") %>
+        <h2>Collaborate</h2>
+        <p>Bookmark and organize priority legislative proposals.</p>
+        <p>Flag important proposals to other team members.</p>
+        <p>Leave comments and notes for colleagues on key pieces of legislation
+        your team is following.</p>
+        <p>Embed our platform into your own website to activate your members or supporters
+        on issues that matter most.</p>
+    </div>
+    
+    <div class="col-md-12">
+        <h2 style="text-align: center">Interested? <%= link_to "Join", signup_path %> our beta or <%= mail_to "kylebuttner@gmail.com", "email us" %>!</h2>
+    </div>
+
+    
+</div>
 </div>
