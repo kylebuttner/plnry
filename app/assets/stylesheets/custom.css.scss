@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// colors
+$background: #323232;
+
 html {
   height: 100%;
 }
@@ -31,7 +34,8 @@ html {
 .navbar-inverse {
   padding-top: 40px;
   // background-color: #FFD0A4;
-  background-color: #06D8FF;
+  // background-color: #06D8FF;
+  background-color: $background;
   border-color: transparent;
 }
 
@@ -49,8 +53,15 @@ html {
   height: auto;
 }
 
+#homelogo img{
+  margin-left: 25px;
+  width: 50px;
+  height: auto;
+}
+
 body {
-  background-color: #06D8FF;
+  background-color: $background;
+  // background-color: #06D8FF;
 }
 
 
