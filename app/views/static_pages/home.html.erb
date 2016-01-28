@@ -29,7 +29,7 @@
         </div>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Features",   features_path, :class => ('active' if current_page?(features_path)) %></li>
+            <li><%= link_to "Features",   "#", :class => ('active' if current_page?(features_path)) %></li>
             <li><%= link_to "Log In", login_path, :class => ('active' if current_page?(login_path)) %></li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
     Monitor and analyse legislative activity across Europe.
   </h2>
   
-  <%= link_to "Get access now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Get access now!", "#", class: "btn btn-lg btn-primary" %>
   
   <p id="homepage" style="color: #fff">Questions? <%= mail_to "kylebuttner@gmail.com", "Leave us a note!" %></p>
 </div>
